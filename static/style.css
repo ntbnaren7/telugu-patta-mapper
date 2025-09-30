@@ -1,0 +1,7 @@
+﻿body { font-family: Arial,sans-serif; background:#fafafa; color:#222; }
+.container { max-width:900px; margin:20px auto; background:#fff; padding:15px; border-radius:8px; }
+pre { white-space: pre-wrap; }
+.preview { max-height:6em; overflow:auto; }
+.ocr { background:#f7f7f7; padding:10px; border-radius:6px; max-height:300px; overflow:auto; }
+.docs, .spans { border-collapse: collapse; width:100%; margin-top:12px; }
+.docs td, .docs th, .spans td, .spans th { border:1px solid #ddd; padding:6px; }

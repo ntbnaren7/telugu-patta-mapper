@@ -1,0 +1,12 @@
+﻿<!doctype html>
+<html><head>
+<meta charset="utf-8"><title>Patta Mapper</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head><body><div class="container">
+<h1>Patta Mapper — Demo</h1>
+<table class="docs"><tr><th>ID</th><th>Preview</th><th>OCR File</th><th>Score</th><th>View</th></tr>
+{% for m in mapped %}
+<tr><td>{{m.id}}</td><td><pre class="preview">{{m.preview}}</pre></td>
+<td>{{m.matched_file or "—"}}</td><td>{{"%.3f"|format(m.match_score)}}</td>
+<td><a href="{{url_for('view_doc',doc_id=m.id)}}">View</a></td></tr>
+{% endfor %}</table></div></body></html>
